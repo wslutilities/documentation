@@ -1,0 +1,24 @@
+{
+  "name": "wslu-docs",
+  "version": "1.0.0",
+  "description": "This is the documentation for WSL Utilities",
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^1.0.2"
+  },
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wslutilities/documentation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wslutilities/documentation/issues"
+  },
+  "homepage": "https://github.com/wslutilities/documentation#readme"
+}
