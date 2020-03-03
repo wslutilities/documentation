@@ -1,6 +1,6 @@
 ## Manpage Name
 
-wslu - Windows 10 Linux Subsystem Utility
+wslu (deprecated) - Windows 10 Linux Subsystem Utility
 
 ## Synopsis
 
