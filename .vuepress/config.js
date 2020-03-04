@@ -13,15 +13,15 @@ module.exports = {
 			{text: 'Contribute', link: '/contributing.html'},
 			{text: 'Manpages',
 			items: [
-				{text: 'wslfetch(1)', link: '//wslutiliti.es/wslu/man/wslfetch.html'},
-				{text: 'wslsys(1)', link: '//wslutiliti.es/wslu/man/wslsys.html'},
-				{text: 'wslupath(1)', link: '//wslutiliti.es/wslu/man/wslupath.html'},
-				{text: 'wslusc(1)', link: '//wslutiliti.es/wslu/man/wslusc.html'},
-				{text: 'wslvar(1)', link: '//wslutiliti.es/wslu/man/wslvar.html'},
-				{text: 'wslview(1)', link: '//wslutiliti.es/wslu/man/wslview.html'},
-				{text: 'wslact(1)', link: '//wslutiliti.es/wslu/man/wslact.html'},
-				{text: 'wslgsu(1)', link: '//wslutiliti.es/wslu/man/wslgsu.html'},
-				{text: 'wslu(7)', link: '//wslutiliti.es/wslu/man/wslu.html'}
+				{text: 'wslfetch(1)', link: 'https://wslutiliti.es/wslu/man/wslfetch.html'},
+				{text: 'wslsys(1)', link: 'https://wslutiliti.es/wslu/man/wslsys.html'},
+				{text: 'wslupath(1)', link: 'https://wslutiliti.es/wslu/man/wslupath.html'},
+				{text: 'wslusc(1)', link: 'https://wslutiliti.es/wslu/man/wslusc.html'},
+				{text: 'wslvar(1)', link: 'https://wslutiliti.es/wslu/man/wslvar.html'},
+				{text: 'wslview(1)', link: 'https://wslutiliti.es/wslu/man/wslview.html'},
+				{text: 'wslact(1)', link: 'https://wslutiliti.es/wslu/man/wslact.html'},
+				{text: 'wslgsu(1)', link: 'https://wslutiliti.es/wslu/man/wslgsu.html'},
+				{text: 'wslu(7)', link: 'https://wslutiliti.es/wslu/man/wslu.html'}
 			]
 			},
 			{text: 'More',
