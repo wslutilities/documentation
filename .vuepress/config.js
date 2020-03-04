@@ -1,4 +1,5 @@
 module.exports = {
+	base: "/wslu/",
 	title: 'wslu Wiki',
 	description: 'A collection of utilities for Windows 10 Linux Subsystems',
 	head: [
