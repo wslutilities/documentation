@@ -1,9 +1,53 @@
 
 # wslu
 
-> This wiki is still a work in progress. Information might be for the in development version or out-of-update.
+[![GitHub license](https://img.shields.io/github/license/wslutilities/wslu?style=flat-square&label=license&color=blue&logo=github)](https://github.com/wslutilities/wslu/blob/master/LICENSE)
+[![GitHub (pre-)release](https://img.shields.io/github/v/release/wslutilities/wslu?include_prereleases&logo=github&style=flat-square)](https://github.com/wslutilities/wslu)
+[![GitLab](https://img.shields.io/static/v1?label=gitlab&logo=gitlab&color=E24329&message=mirrored&style=flat-square)](https://gitlab.com/wslutilities/wslu)
+[![Launchpad](https://img.shields.io/static/v1?label=launchpad&logo=launchpad&color=F8C300&message=mirrored&style=flat-square)](https://launchpad.net/wslu)
+[![Gitee](https://img.shields.io/static/v1?label=gitee&color=C71D23&message=mirrored&style=flat-square)](https://gitee.com/mirrors/wslu)
+[![Twitter Follow](https://img.shields.io/twitter/follow/wslutilities?style=flat-square&logo=twitter&color=1DA1F2&label=follow)](https://twitter.com/wslutilities)
 
-This is a collection of utilities for Windows 10 Linux Subsystem, such as enabling sound in WSL or creating your favorite linux app shortcuts on Windows 10 Desktop. Requires Windows 10 Creators Update and higher.
+This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop.
+
+Requires Windows 10 Creators Update; Some of the feature requires a higher version of Windows 10; Supports WSL2.
+
+## Feature
+
+**wslusc**
+
+A WSL shortcut creator to create a shortcut on your Windows 10 Desktop.
+
+**wslsys**
+
+A WSL system information printer to print out system informations from Windows 10 or WSL.
+
+**wslfetch**
+
+A WSL screenshot information tool to print information in an elegant way.
+
+**wslvar**
+
+A WSL tool to help you get Windows system environment variables.
+
+**wslview**
+
+*With alias `wview/wslstart/wstart`*
+
+A fake WSL browser that can help you open link in default Windows browser or open files on Windows.
+
+**wslupath**
+
+*⚠ Deprecated*
+
+A WSL tool to convert path styles.
+
+**wslact**
+
+A set of quick actions for WSL such as quickly mounting all drives or manually sync time between Windows and WSL.
+
+**wslgsu**
+A WSL tool to help creating startup tasks for linux process on Windows.
 
 ## Currently supported Distro
 
@@ -20,14 +64,18 @@ This is a collection of utilities for Windows 10 Linux Subsystem, such as enabli
 - Scientific Linux, Oracle Linux* or RedHat Enterprise Linux** via [Pengwin Enterprise (Formerly WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)
 - Fedora via [Fedora Remix for WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix)
 
+
 *: Will support in the future.
+
 **: you need to request to using RHEL from WLinux team and have a license of RHEL of your own.
 
 Legacy Ubuntu is no longer supported.
 
 ## Bug
 
-Report bugs to <https://github.com/wslutilities/wslu/issues>
+Report bugs to <https://github.com/wslutilities/wslu/issues>.
+
+Report bugs from Ubuntu version to <https://bugs.launchpad.net/ubuntu/+source/wslu>.
 
 ## License & Credits
 
@@ -35,14 +83,21 @@ Report bugs to <https://github.com/wslutilities/wslu/issues>
 
 This project uses [GPLv3](LICENSE) License.
 
-Logo of WSL Utilities is licensed under [CC BY-NC 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+Logo of WSL Utilities and icons for `wslusc` desktop shortcuts are licensed under [CC BY 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-### Assets
 
-Tux logo used in `\src\etc\wsl.ico` was originally made by Larry Ewing in the Gimp and re-illustrated in vector by Garrett LeSage, using Inkscape.
 
-Some of `wslfetch` ASCII Arts comes from [`neofetch`](https://github.com/dylanaraps/neofetch/) with [MIT](https://github.com/dylanaraps/neofetch/blob/master/LICENSE.md) License and [`screenFetch`](https://github.com/KittyKatt/screenFetch/) with [GPLv3](https://github.com/KittyKatt/screenFetch/blob/master/COPYING) License.
+The sudo.ps1 (`./src/etc/sudo.ps1`) used here is a part of [psutils](^1) made by Luke Sampson. the file is used under MIT License.
 
-Pengwin Logo used in `wslfetch` ASCII art is ASCII version of the artwork by [Dennis D. Bednarz](https://twitter.com/DennisBednarz), with use permission from Whitewater Foundry.
+Tux logo used here(`/src/etc/wsl.ico`) was originally made by Larry Ewing in the Gimp and re-illustrated in vector by Garrett LeSage, using Inkscape.
+
+Some of `wslfetch` ASCII Arts comes from [neofetch](^2) with MIT License (License B) and [screenFetch](^3) with GPLv3 License (License C).
+
+Pengwin Logo used in `wslfetch` ASCII art is ASCII version of the artwork by [Dennis D. Bednarz](^4), with use permission from Whitewater Foundry.
 
 WLinux Logo used in `wslfetch` ASCII art is ASCII version of the artwork by Larry Ewing.
+
+[^1]: https://github.com/lukesampson/psutils/
+[^2]: https://github.com/dylanaraps/neofetch/
+[^3]: https://github.com/KittyKatt/screenFetch/
+[^4]: https://twitter.com/DennisBednarz
