@@ -4,18 +4,15 @@
   "description": "This is the documentation for WSL Utilities",
   "dependencies": {},
   "devDependencies": {
-    "vuepress": "^1.0.2"
+    "vuepress": "^1.5.2"
   },
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wslutilities/documentation.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/wslutilities/documentation.git",
+  "author": "Jinming Wu, Patrick <me@patrickwu.space>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wslutilities/documentation/issues"
