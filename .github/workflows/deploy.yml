@@ -10,7 +10,8 @@ jobs:
         with:
           cmd: install
       - uses: borales/actions-yarn@v2.0.0
-        with: build
+        with: 
+          cmd: build
       - name: Deploy
         env:
           GH_TOKEN: ${{ secrets.GIT_DEPLOY_KEY }}
