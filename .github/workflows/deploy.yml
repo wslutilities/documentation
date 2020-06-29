@@ -6,14 +6,11 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - name: Install NodeJS
-        uses: dcodeIO/setup-node-nvm@master
+      - uses: borales/actions-yarn@v2.0.0
         with:
-          node-version: lts/*
-      - name: Generate Wiki
-        run: |
-          npm install
-          npm run build
+          cmd: install
+      - uses: borales/actions-yarn@v2.0.0
+        with: build
       - name: Deploy
         env:
           GH_TOKEN: ${{ secrets.GIT_DEPLOY_KEY }}
