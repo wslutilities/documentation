@@ -18,8 +18,8 @@ jobs:
         run: |
           git config --global user.email "me@patrickwu.space"
           git config --global user.name "Jinming Wu, Patrick"
-          git clone --depth 1 https://patrick330602:$GH_TOKEN@github.com/wslutilities/wslutilities.github.io.git website
+          git clone --depth 1 https://patrick330602:$GH_TOKEN@github.com/wslutilities/website.git website
           cp -rf ./.vuepress/dist/* ./website/wslu/
           git --git-dir=./website/.git --work-tree=./website add -A
-          git --git-dir=./website/.git --work-tree=./website commit -m "Wslu Wiki update at $(date)"
+          git --git-dir=./website/.git --work-tree=./website commit -m "wslu Wiki update at $(date)"
           git --git-dir=./website/.git --work-tree=./website push
