@@ -4,7 +4,7 @@
   "description": "This is the documentation for WSL Utilities",
   "dependencies": {},
   "devDependencies": {
-    "vuepress": "^1.5.2"
+    "vuepress": "^1.8.2"
   },
   "scripts": {
     "dev": "vuepress dev",
