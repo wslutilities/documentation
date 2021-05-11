@@ -3,7 +3,22 @@ module.exports = {
 	title: 'wslu Wiki',
 	description: 'A collection of utilities for Windows 10 Linux Subsystems',
 	head: [
-		['link', {rel: 'icon', href: 'https://github.com/wslutilities/wslu/raw/master/extras/icon.png'}]
+		['link', {rel: 'icon', href: 'https://github.com/wslutilities/wslu/raw/master/extras/icon.png'}],
+		['script',{type: 'text/javascript'},`
+//<![CDATA[
+var owa_baseUrl = 'https://a.patrickwu.space/';
+var owa_cmds = owa_cmds || [];
+owa_cmds.push(['setSiteId', 'f6eb61f8cd9b98df3e79264dbbe9c726']);
+owa_cmds.push(['trackPageView']);
+owa_cmds.push(['trackClicks']);
+
+(function() {
+    var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+    owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+    _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+    var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+}());
+//]]>`]
 	],
 	themeConfig: {
 		logo: 'https://github.com/wslutilities/wslu/raw/master/extras/icon.png',
