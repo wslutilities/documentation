@@ -1,10 +1,10 @@
 ## What is WSL?
 
-WSL is short for "Windows Subsystem for Linux", which is a Linux Subsystem from Windows 10. WSL provides developers with a familiar Bash shell and Linux environment in which you can run most Linux command-line tools, directly on Windows, UNMODIFIED, without needing an entire Linux virtual machine. Currently we have Bash On Ubuntu On Windows 10(Legacy), Ubuntu, OpenSUSE and SUSE Linux Enterprise Server, and more distros such as Fedora will be coming in the future.
+WSL is short for "Windows Subsystem for Linux", which is a Linux Subsystem from Windows 10. WSL provides developers with a familiar Bash shell and Linux environment in which you can run most Linux command-line tools, directly on Windows, UNMODIFIED, without needing an entire Linux virtual machine.
 
 ## Why deprecating `wslupath`?
 
-WSL now have a better wsl path conversion tool wslpath provided by Microsoft that is builtin for all distros. `wslupath` is still here for compatibility.
+WSL now have a better wsl path conversion tool `wslpath` provided by Microsoft that is builtin for all distros. `wslupath` is still here for compatibility.
 
 ## When pinned in the taskbar, why the shortcut created by `wslusc` will have 2 icons?
 

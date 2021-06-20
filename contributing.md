@@ -8,7 +8,7 @@ We love pull requests from everyone. By participating in this project, you agree
 
 Run the following to get started:
 ```bash
-git clone --recursive --branch develop https://github.com/wslutilities/wslu.git
+git clone --recursive --branch dev/master https://github.com/wslutilities/wslu.git
 ./configure.sh
 make
 sudo make res_install
@@ -20,10 +20,12 @@ sudo make res_install
 wslu
 |-src
 |  |-etc
+|  |  |-wslview.desktop: XDG-style app definition for wslview
 |  |  |-wsl.ico: legacy default icon for wslusc
 |  |  |-wsl-gui.ico: default icon for wslusc GUI shortcut
 |  |  |-wsl-term.ico: default icon for wslusc cli shortcut
-|  |  |-sudo.ps1: helper script for wslgsu 
+|  |  |-sudo.ps1: helper script for wslgsu
+|  |  |-get_dpi.ps1: helper script for dpi function in wslsys
 |  |  |-wslsc-helper.sh: helper script for wslusc on WSL side
 |  |  \-runHidden.vbs: helper script for wslusc on Windows side
 |  |-wslu-header: Header file of all script
@@ -35,6 +37,7 @@ wslu
    \-build
       |-debian: files for building .deb
       |-rpm: files for building .rpm
+      |-fedora: files for building Fedora versions of .rpm (4+)
       |-arch: files for building Arch Linux packages
       \-alpine: files for building Alpine Linux packages
 ```

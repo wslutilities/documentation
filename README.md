@@ -1,7 +1,6 @@
 
 # wslu
 
-[![GitHub license](https://img.shields.io/github/license/wslutilities/wslu?style=flat-square&label=license&color=blue&logo=github)](https://github.com/wslutilities/wslu/blob/master/LICENSE)
 [![GitHub (pre-)release](https://img.shields.io/github/v/release/wslutilities/wslu?include_prereleases&logo=github&style=flat-square)](https://github.com/wslutilities/wslu)
 [![GitLab](https://img.shields.io/static/v1?label=gitlab&logo=gitlab&color=E24329&message=mirrored&style=flat-square)](https://gitlab.com/wslutilities/wslu)
 [![Launchpad](https://img.shields.io/static/v1?label=launchpad&logo=launchpad&color=F8C300&message=mirrored&style=flat-square)](https://launchpad.net/wslu)
@@ -53,9 +52,9 @@ A WSL tool to help creating startup tasks for linux process on Windows.
 
 - [Debian GNU/Linux](https://www.microsoft.com/store/productId/9MSVKQC78PK6)
 - [Kali Linux](https://www.microsoft.com/store/productId/9PKR34TNCV07)
-- OpenSUSE Leap [42](https://www.microsoft.com/store/productId/9NJVJTS82TJX) and [15.0](https://www.microsoft.com/store/productId/9N1TB6FPVJ8C)
+- OpenSUSE Leap [42](https://www.microsoft.com/store/productId/9NJVJTS82TJX), [15.0](https://www.microsoft.com/store/productId/9N1TB6FPVJ8C), [15.1](https://www.microsoft.com/store/productId/9NJFZK00FGKV), and [15.2](https://www.microsoft.com/store/productId/9MZD0N9Z4M4H)
 - SUSE Linux Enterprise Server [12](https://www.microsoft.com/store/productId/9P32MWBH6CNS) and [15](https://www.microsoft.com/store/productId/9PMW35D7FNLX)
-- Ubuntu [Latest](https://www.microsoft.com/store/productId/9NBLGGH4MSV6), [16.04 LTS](https://www.microsoft.com/store/productId/9PJN388HP8C9) and [18.04 LTS](https://www.microsoft.com/store/productId/9N9TNGVNDL3Q)
+- Ubuntu [Latest](https://www.microsoft.com/store/productId/9NBLGGH4MSV6), Community Preview, [16.04 LTS](https://www.microsoft.com/store/productId/9PJN388HP8C9), [18.04 LTS](https://www.microsoft.com/store/productId/9N9TNGVNDL3Q) and 20.04 LTS
 - [Pengwin (Formerly WLinux)](https://www.microsoft.com/store/productId/9NV1GV1PXZ6P)
 
 **Community Supported Distro**
@@ -63,6 +62,7 @@ A WSL tool to help creating startup tasks for linux process on Windows.
 - Alpine Linux via [AlpineWSL](https://github.com/yuk7/AlpineWSL) or [Alpine WSL](https://www.microsoft.com/store/productId/9P804CRF0395)
 - Scientific Linux, Oracle Linux* or RedHat Enterprise Linux** via [Pengwin Enterprise (Formerly WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)
 - Fedora via [Fedora Remix for WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix)
+- 
 
 
 *: Will support in the future.
@@ -75,7 +75,7 @@ Legacy Ubuntu is no longer supported.
 
 Report bugs to <https://github.com/wslutilities/wslu/issues>.
 
-Report bugs from Ubuntu version to <https://bugs.launchpad.net/ubuntu/+source/wslu>.
+Report bugs for Ubuntu version to <https://bugs.launchpad.net/ubuntu/+source/wslu>.
 
 ## License & Credits
 
