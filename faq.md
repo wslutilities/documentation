@@ -10,6 +10,10 @@ WSL now have a better wsl path conversion tool `wslpath` provided by Microsoft t
 
 This is a limitation of WSL and it is expected. when running the shortcut, it will use your Windows X server(X410, VcXsrv, Xming, etc) to create a separate window for displaying the Linux app. Since it is displaying in another app, the window for displaying app will be separated from the original shortcut.
 
+## I am unable to update and `access.patrickwu.space` is not accessible. What happened?
+
+the package has moved to a new location <https://pkg.wslutiliti.es/> that do not relies on my personal website. For old users, you should remove the `http://access.patrickwu.space` entry from `/etc/apt/sources.list` and readd following the guidelines for Kali Linux and Debian GNU/Linux.
+
 ## What is the error code returned?
 
 | error code | description |
