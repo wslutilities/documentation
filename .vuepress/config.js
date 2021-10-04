@@ -21,13 +21,14 @@ owa_cmds.push(['trackClicks']);
 //]]>`]
 	],
 	themeConfig: {
+		sidebar: false,
 		logo: 'https://github.com/wslutilities/wslu/raw/master/extras/icon.png',
-		nav: [
+		navbar: [
 			{text: 'Home', link: '/'},
 			{text: 'Install', link: '/install.html'},
 			{text: 'Contribute', link: '/contributing.html'},
 			{text: 'Manpages',
-			items: [
+			children: [
 				{text: 'wslfetch(1)', link: 'https://wslutiliti.es/wslu/man/wslfetch.html'},
 				{text: 'wslsys(1)', link: 'https://wslutiliti.es/wslu/man/wslsys.html'},
 				{text: 'wslupath(1)', link: 'https://wslutiliti.es/wslu/man/wslupath.html'},
@@ -40,8 +41,8 @@ owa_cmds.push(['trackClicks']);
 			]
 			},
 			{text: 'More',
-			items: [
-				{text: 'Legacy', items:[
+			children: [
+				{text: 'Legacy', children:[
 					{text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html'},
 					{text: 'Contribution', link: '/legacy/contrib.html'},
 					{text: 'Installation', link: '/legacy/inst.html'},
