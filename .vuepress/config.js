@@ -20,12 +20,36 @@ owa_cmds.push(['trackClicks']);
 }());
 //]]>`]
 	],
+	locales: {
+		'/': {
+			lang: 'en-US',
+			title: 'wslu Wiki',
+			description: 'A collection of utilities for Windows 10 Linux Subsystems'
+		},
+		'/zh-CN/': {
+			lang: 'zh-CN',
+			title: 'wslu 百科',
+			description: '一套 Windows 10 Linux 子系统工具组'
+		},
+		'/zh-TW/': {
+			lang: 'zh-TW',
+			title: 'wslu 百科',
+			description: '一套 Windows 10 Linux 子系統工具組'
+		},
+		'/eo/': {
+			lang: 'eo',
+			title: 'wslu Vikio',
+			description: 'kolekto de utilaĵoj por WSL'
+		}
+	},
 	themeConfig: {
 		sidebar: false,
 		logo: 'https://github.com/wslutilities/wslu/raw/master/extras/icon.png',
 		locales: {
 			'/': {
 			  selectLanguageName: 'English',
+			  selectLanguageText: 'Lang.',
+        	  selectLanguageAriaLabel: 'Lang.',
 			  navbar: [
 				{text: 'Home', link: '/'},
 				{text: 'Install', link: '/install.html'},
@@ -49,7 +73,7 @@ owa_cmds.push(['trackClicks']);
 						{text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html'},
 						{text: 'Contribution', link: '/legacy/contrib.html'},
 						{text: 'Installation', link: '/legacy/inst.html'},
-						{texT: 'Manpage', link: '/legacy.html'}
+						{texT: 'Manpage', link: '/legacy/wslu.html'}
 					]},
 					{text: 'Code of Conduct', link: '/coc.html'},
 					{text: 'FAQ', link: '/faq.html'}
@@ -60,11 +84,13 @@ owa_cmds.push(['trackClicks']);
 			},
 			'/zh-CN/': {
 			  selectLanguageName: '简体中文',
+			  selectLanguageText: 'Lang./语言',
+        	  selectLanguageAriaLabel: 'Lang./语言',
 			  navbar: [
-				{text: 'Home', link: '/'},
-				{text: 'Install', link: '/install.html'},
-				{text: 'Contribute', link: '/contributing.html'},
-				{text: 'Manpages',
+				{text: '主页', link: '/'},
+				{text: '安装', link: '/install.html'},
+				{text: '贡献', link: '/contributing.html'},
+				{text: '手册页',
 				children: [
 					{text: 'wslfetch(1)', link: 'https://wslutiliti.es/wslu/man/wslfetch.html'},
 					{text: 'wslsys(1)', link: 'https://wslutiliti.es/wslu/man/wslsys.html'},
@@ -77,16 +103,16 @@ owa_cmds.push(['trackClicks']);
 					{text: 'wslu(7)', link: 'https://wslutiliti.es/wslu/man/wslu.html'}
 				]
 				},
-				{text: 'More',
+				{text: '更多',
 				children: [
-					{text: 'Legacy', children:[
-						{text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html'},
-						{text: 'Contribution', link: '/legacy/contrib.html'},
-						{text: 'Installation', link: '/legacy/inst.html'},
-						{texT: 'Manpage', link: '/legacy.html'}
+					{text: '旧文档', children:[
+						{text: 'Beta Release Manual', link: 'https://wslutiliti.es/wslu/legacy/beta-rel-man.html'},
+						{text: 'Contribution', link: 'https://wslutiliti.es/wslu/legacy/contrib.html'},
+						{text: 'Installation', link: 'https://wslutiliti.es/wslu/legacy/inst.html'},
+						{texT: 'Manpage', link: 'https://wslutiliti.es/wslu/legacy/wslu.html'}
 					]},
-					{text: 'Code of Conduct', link: '/coc.html'},
-					{text: 'FAQ', link: '/faq.html'}
+					{text: '行为准则', link: '/coc.html'},
+					{text: '常见问题', link: '/faq.html'}
 				]
 	
 				}
@@ -94,11 +120,13 @@ owa_cmds.push(['trackClicks']);
 			},
 			'/zh-TW/': {
 				selectLanguageName: '正體中文',
+				selectLanguageText: 'Lang./語言',
+				selectLanguageAriaLabel: 'Lang./語言',
 				navbar: [
-					{text: 'Home', link: '/'},
-					{text: 'Install', link: '/install.html'},
-					{text: 'Contribute', link: '/contributing.html'},
-					{text: 'Manpages',
+					{text: '主頁', link: '/'},
+					{text: '安裝', link: '/install.html'},
+					{text: '貢獻', link: '/contributing.html'},
+					{text: '手冊頁',
 					children: [
 						{text: 'wslfetch(1)', link: 'https://wslutiliti.es/wslu/man/wslfetch.html'},
 						{text: 'wslsys(1)', link: 'https://wslutiliti.es/wslu/man/wslsys.html'},
@@ -111,27 +139,29 @@ owa_cmds.push(['trackClicks']);
 						{text: 'wslu(7)', link: 'https://wslutiliti.es/wslu/man/wslu.html'}
 					]
 					},
-					{text: 'More',
+					{text: '更多',
 					children: [
-						{text: 'Legacy', children:[
-							{text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html'},
-							{text: 'Contribution', link: '/legacy/contrib.html'},
-							{text: 'Installation', link: '/legacy/inst.html'},
-							{texT: 'Manpage', link: '/legacy.html'}
+						{text: '舊文檔', children:[
+							{text: 'Beta Release Manual', link: 'https://wslutiliti.es/wslu/legacy/beta-rel-man.html'},
+							{text: 'Contribution', link: 'https://wslutiliti.es/wslu/legacy/contrib.html'},
+							{text: 'Installation', link: 'https://wslutiliti.es/wslu/legacy/inst.html'},
+							{texT: 'Manpage', link: 'https://wslutiliti.es/wslu/legacy/wslu.html'}
 						]},
-						{text: 'Code of Conduct', link: '/coc.html'},
-						{text: 'FAQ', link: '/faq.html'}
+						{text: '行為守則', link: '/coc.html'},
+						{text: '常見問題', link: '/faq.html'}
 					]		
 					}
 				]
 			},
 			'/eo/': {
 				selectLanguageName: 'Esperanto',
+				selectLanguageText: 'Lang./Lingvo',
+				selectLanguageAriaLabel: 'Lang./Lingvo',
 				navbar: [
-					{text: 'Home', link: '/'},
-					{text: 'Install', link: '/install.html'},
-					{text: 'Contribute', link: '/contributing.html'},
-					{text: 'Manpages',
+					{text: 'Ĉefpaĝo', link: '/'},
+					{text: 'Instalado', link: '/install.html'},
+					{text: 'Kontribuanto', link: '/contributing.html'},
+					{text: 'Permanpaĝoj',
 					children: [
 						{text: 'wslfetch(1)', link: 'https://wslutiliti.es/wslu/man/wslfetch.html'},
 						{text: 'wslsys(1)', link: 'https://wslutiliti.es/wslu/man/wslsys.html'},
@@ -144,16 +174,16 @@ owa_cmds.push(['trackClicks']);
 						{text: 'wslu(7)', link: 'https://wslutiliti.es/wslu/man/wslu.html'}
 					]
 					},
-					{text: 'More',
+					{text: 'Pli',
 					children: [
-						{text: 'Legacy', children:[
-							{text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html'},
-							{text: 'Contribution', link: '/legacy/contrib.html'},
-							{text: 'Installation', link: '/legacy/inst.html'},
-							{texT: 'Manpage', link: '/legacy.html'}
+						{text: 'Heredaĵo', children:[
+							{text: 'Beta Release Manual', link: 'https://wslutiliti.es/wslu/legacy/beta-rel-man.html'},
+							{text: 'Contribution', link: 'https://wslutiliti.es/wslu/legacy/contrib.html'},
+							{text: 'Installation', link: 'https://wslutiliti.es/wslu/legacy/inst.html'},
+							{texT: 'Manpage', link: 'https://wslutiliti.es/wslu/legacy/wslu.html'}
 						]},
-						{text: 'Code of Conduct', link: '/coc.html'},
-						{text: 'FAQ', link: '/faq.html'}
+						{text: 'Kondutkodo', link: '/coc.html'},
+						{text: 'Oftaj Demandoj', link: '/faq.html'}
 					]
 		
 					}
