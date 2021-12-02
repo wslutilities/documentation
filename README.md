@@ -2,9 +2,7 @@
 # wslu
 
 [![GitHub (pre-)release](https://img.shields.io/github/v/release/wslutilities/wslu?include_prereleases&logo=github&style=flat-square)](https://github.com/wslutilities/wslu)
-[![GitLab](https://img.shields.io/static/v1?label=gitlab&logo=gitlab&color=E24329&message=mirrored&style=flat-square)](https://gitlab.com/wslutilities/wslu)
 [![Launchpad](https://img.shields.io/static/v1?label=launchpad&logo=launchpad&color=F8C300&message=mirrored&style=flat-square)](https://launchpad.net/wslu)
-[![Gitee](https://img.shields.io/static/v1?label=gitee&color=C71D23&message=mirrored&style=flat-square)](https://gitee.com/mirrors/wslu)
 [![Twitter Follow](https://img.shields.io/twitter/follow/wslutilities?style=flat-square&logo=twitter&color=1DA1F2&label=follow)](https://twitter.com/wslutilities)
 
 This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop.
@@ -45,9 +43,6 @@ A WSL tool to convert path styles.
 
 A set of quick actions for WSL such as quickly mounting all drives or manually sync time between Windows and WSL.
 
-**wslgsu**
-A WSL tool to help creating startup tasks for linux process on Windows.
-
 ## Currently supported Distro
 
 - [Debian GNU/Linux](https://www.microsoft.com/store/productId/9MSVKQC78PK6)
@@ -67,7 +62,7 @@ A WSL tool to help creating startup tasks for linux process on Windows.
 
 *: Will support in the future.
 
-**: you need to request to using RHEL from WLinux team and have a license of RHEL of your own.
+**: you need to request to using RHEL from Whitewater Foundary and have a license of RHEL of your own.
 
 Legacy Ubuntu is no longer supported.
 
@@ -81,7 +76,7 @@ Report bugs for Ubuntu version to <https://bugs.launchpad.net/ubuntu/+source/wsl
 
 <img width="150" src="https://www.gnu.org/graphics/gplv3-with-text-136x68.png">
 
-This project uses [GPLv3](LICENSE) License.
+This project uses GPLv3 License.
 
 Logo of WSL Utilities and icons for `wslusc` desktop shortcuts are licensed under [CC BY 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
