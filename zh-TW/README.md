@@ -60,7 +60,7 @@
 
 *: 未來會支持。
 
-**: 你需要向 Whitewater Foundry 提出使用 RHEL，摒棄同時擁有自己的 RHEL使用許可證書。
+**: 你需要向 Whitewater Foundry 提出使用 RHEL，並且同時需要擁有自己的 RHEL使用許可證書。
 
 舊版的 Ubuntu 不再被支援。
 
