@@ -2,7 +2,7 @@
 
 ### Alpine Linux
 
-You can install `wslu` on **Alpine Linux 3.12+** with the following command:
+你可以用以下指令通过 **Alpine Linux 3.12+** 安装 `wslu`：
 
 ```
 sudo apk add wslu
@@ -10,13 +10,24 @@ sudo apk add wslu
 
 ### Arch Linux
 
-> AUR version of `wslu` is pulled due to that it violated its policy.
-
-Download the latest package from release and install using the command: `sudo pacman -U *.zst`
+你可以用以下方法安装 `wslu`：
+1. 如未操作过，请先用命令 `pacman-key --init` 初始化 `pacman-key`；
+2. 使用命令 `pacman-key -r A2861ABFD897DD37` 将 WSL Utilities 公共密钥从密钥服务器加入 `pacman`，或通过以下方法从官网下载公共密钥导入:
+```
+wget https://pkg.wslutiliti.es/public.key
+pacman-key --add public.key
+```
+3. 使用命令 `pacman-key --lsign-key A2861ABFD897DD37`本地签名密钥;
+4. 将以下内容加入 `/etc/pacman.conf`:
+```
+[wslutilities]
+Server = https://pkg.wslutiliti.es/arch/
+```
+5. 使用命令 `pacman -Sy && pacman -S wslu` 来运行安装。
 
 ### CentOS/RHEL/Oracle Linux
 
-Add the repository for the corresponding Linux distribution:
+为相应的发行版添加仓库：
 
 - **CentOS 7**: 
 ```
@@ -49,12 +60,12 @@ sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(/bin/arc
 sudo yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/wslutilities/CentOS_8/home:wslutilities.repo
 ```
 
-Then install with the command `sudo yum install wslu`.
+然后用以下指令 `sudo yum install wslu` 安装 `wslu`。
 
 
 ### Debian
 
-You can install `wslu` with the following command:
+你可以用以下指令安装 `wslu`：
 
 ```
 sudo apt install gnupg2 apt-transport-https
@@ -65,6 +76,9 @@ sudo apt install wslu
 ```
 
 ### Fedora
+
+你可以用以下指令通过 `COPR` 安装 `wslu`：
+
 ```
 sudo dnf copr enable wslutilities/wslu
 sudo dnf install wslu
@@ -72,11 +86,11 @@ sudo dnf install wslu
 
 ### Fedora Remix for WSL
 
-Preinstalled.
+已预装。
 
 ### Kali Linux
 
-You can install `wslu` with the following command:
+你可以用以下指令安装 `wslu`：
 
 ```
 sudo apt install gnupg2 apt-transport-https
@@ -88,11 +102,11 @@ sudo apt install wslu
 
 ### Pengwin
 
-Preinstalled.
+已预装。
 
 ### Pengwin Enterprise 7
 
-You can install `wslu` with the following command:
+你可以用以下指令安装 `wslu`：
 
 ```
 sudo yum install wslu
@@ -100,11 +114,13 @@ sudo yum install wslu
 
 ### Pengwin Enterprise 8
 
-Add the EPEL repository:
+加入 EPEL 仓库:
+
 ```
 sudo dnf install -y epel-release
 ```
-You can install `wslu` with the following command:
+
+你可以用以下指令安装 `wslu`：
 
 ```
 sudo dnf install -y wslu
@@ -112,22 +128,22 @@ sudo dnf install -y wslu
 
 ### Ubuntu
 
-> Attention!
+> 注意!
 >
-> For Ubuntu version, you should not only report bug here but also report bug at [Launchpad](https://bugs.launchpad.net/ubuntu/+source/wslu).
+> Ubuntu 版本的 `wslu` 为修改版。你需要在[此](https://bugs.launchpad.net/ubuntu/+source/wslu)对 Ubuntu 版问题进行反馈。
 
-Preinstalled in the latest apps. On older installations of Ubuntu please install `ubuntu-wsl` that depends on `wslu`:
+最新版本已预装。针对旧版本的安装，请安装依赖于 wslu 的 ubuntu-wsl:
 
 ```
 sudo apt update
 sudo apt install ubuntu-wsl
 ```
 
-To install the latest version before `wslu` reaches `main` reporsitory, you can install via our PPA: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
+在最新版 `wslu` 进入 `main` 仓库前，请从以下 PPA 安装： <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
 
 ### OpenSUSE
 
-You can install `wslu` with the following command:
+你可以用以下命令安装 `wslu`：
 
 ```
 sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/openSUSE_Leap_15.1/home:wslutilities.repo
@@ -137,7 +153,7 @@ sudo zypper in wslu
 
 ### SUSE Linux Enperprise Server
 
-You can install `wslu` with the following command:
+你可以用以下命令安装 `wslu`：
 
 ```
 SLESCUR_VERSION="$(grep VERSION= /etc/os-release | sed -e s/VERSION=//g -e s/\"//g -e s/-/_/g)"
@@ -147,15 +163,15 @@ sudo zypper up
 sudo zypper in wslu
 ```
 
-### Other distributions
+### 其他发行版
 
-> **⚠ Not Recommend**
+> **⚠ 不建议**
 > 
-> `curl | bash` method is not secure. [Related article](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install)
+> `curl | bash` 这种方法并不安全。 [相关文章](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install)
 
-You can install `wslu` with the following command on your preferred distribution: `curl -sL https://raw.githubusercontent.com/wslutilities/wslu/master/extras/scripts/wslu-install | bash`
+在你想要安装的发行版下运行以下命令：`curl -sL https://raw.githubusercontent.com/wslutilities/wslu/master/extras/scripts/wslu-install | bash`
 
-### For Older Verions
+### 针对更旧的版本 （只限英文）
 
 #### Install from `wsl-translinux`
 
