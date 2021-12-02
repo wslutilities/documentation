@@ -10,9 +10,20 @@ sudo apk add wslu
 
 ### Arch Linux
 
-> AUR version of `wslu` is pulled due to that it violated its policy.
-
-Download the latest package from release and install using the command: `sudo pacman -U *.zst`
+You can install `wslu` with the following methods:
+1. If not done so, initial `pacman-key` with `pacman-key --init`;
+2. add the WSL Public Signing Key to `pacman` from the keyserver from keyserver using `pacman-key -r A2861ABFD897DD37` or download from our website and import the key:
+```
+wget https://pkg.wslutiliti.es/public.key
+pacman-key --add public.key
+```
+3. Locally sign the key with `pacman-key --lsign-key A2861ABFD897DD37`;
+4. add the following content in your `/etc/pacman.conf`:
+```
+[wslutilities]
+Server = https://pkg.wslutiliti.es/arch/
+```
+5. run `pacman -Sy && pacman -S wslu` to install.
 
 ### CentOS/RHEL/Oracle Linux
 
