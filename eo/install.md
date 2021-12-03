@@ -2,7 +2,7 @@
 
 ### Alpine Linux
 
-You can install `wslu` on **Alpine Linux 3.12+** with the following command:
+Oni povas instali `wslu` el **Alpine Linux 3.12+** per la jenaj komandoj:
 
 ```
 sudo apk add wslu
@@ -10,13 +10,24 @@ sudo apk add wslu
 
 ### Arch Linux
 
-> AUR version of `wslu` is pulled due to that it violated its policy.
-
-Download the latest package from release and install using the command: `sudo pacman -U *.zst`
+Oni pocas instali `wslu` per la jenaj metodoj:
+1. Komencu `pacman-key` per `pacman-key --init`;
+2. Aldonu la WSL Utilities Publica ŝlosilo al `pacman` de la ŝlosilaservilo per `pacman-key -r A2861ABFD897DD37`, aŭ elŝutu de la nia propra servilo kaj importu la ŝlosilo:
+```
+wget https://pkg.wslutiliti.es/public.key
+pacman-key --add public.key
+```
+3. Subskribu la ŝlosilo loke per `pacman-key --lsign-key A2861ABFD897DD37`;
+4. Aldonu la jena enhavo al `/etc/pacman.conf`:
+```
+[wslutilities]
+Server = https://pkg.wslutiliti.es/arch/
+```
+5. Lanĉu `pacman -Sy && pacman -S wslu` por instali.
 
 ### CentOS/RHEL/Oracle Linux
 
-Add the repository for the corresponding Linux distribution:
+Aldonu la deponejon por la respondanta Linuksa distribuo:
 
 - **CentOS 7**: 
 ```
@@ -49,12 +60,12 @@ sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(/bin/arc
 sudo yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/wslutilities/CentOS_8/home:wslutilities.repo
 ```
 
-Then install with the command `sudo yum install wslu`.
+Tiam instalu per la komando `sudo yum install wslu`.
 
 
 ### Debian
 
-You can install `wslu` with the following command:
+Oni povas instali `wslu` per la jenaj komandoj:
 
 ```
 sudo apt install gnupg2 apt-transport-https
@@ -65,6 +76,9 @@ sudo apt install wslu
 ```
 
 ### Fedora
+
+Oni povas instali `wslu` el **COPR** per la jenaj komandoj:
+
 ```
 sudo dnf copr enable wslutilities/wslu
 sudo dnf install wslu
@@ -72,11 +86,11 @@ sudo dnf install wslu
 
 ### Fedora Remix for WSL
 
-Preinstalled.
+Antaŭinstalita.
 
 ### Kali Linux
 
-You can install `wslu` with the following command:
+Oni povas instali `wslu` per la jenaj komandoj:
 
 ```
 sudo apt install gnupg2 apt-transport-https
@@ -88,11 +102,11 @@ sudo apt install wslu
 
 ### Pengwin
 
-Preinstalled.
+Antaŭinstalita.
 
 ### Pengwin Enterprise 7
 
-You can install `wslu` with the following command:
+Oni povas instali `wslu` per la jenaj komandoj:
 
 ```
 sudo yum install wslu
@@ -100,11 +114,12 @@ sudo yum install wslu
 
 ### Pengwin Enterprise 8
 
-Add the EPEL repository:
+Aldonu la EPEL deponejo:
 ```
 sudo dnf install -y epel-release
 ```
-You can install `wslu` with the following command:
+
+Oni povas instali `wslu` per la jenaj komandoj:
 
 ```
 sudo dnf install -y wslu
@@ -112,22 +127,22 @@ sudo dnf install -y wslu
 
 ### Ubuntu
 
-> Attention!
+> Attenu!
 >
-> For Ubuntu version, you should not only report bug here but also report bug at [Launchpad](https://bugs.launchpad.net/ubuntu/+source/wslu).
+> Por Ubuntu versio, Oni devas ne nur raporti cimojn ĉi tie sed ankaŭ raporti cimojn ĉe [Launchpad](https://bugs.launchpad.net/ubuntu/+source/wslu).
 
-Preinstalled in the latest apps. On older installations of Ubuntu please install `ubuntu-wsl` that depends on `wslu`:
+Antaŭinstalita en la plej freŝa versio. Sur pli aĝaj instaloj de Ubuntu, oni povas instali `ubuntu-wsl` kiu dependas de `wslu`: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
 
 ```
 sudo apt update
 sudo apt install ubuntu-wsl
 ```
 
-To install the latest version before `wslu` reaches `main` reporsitory, you can install via our PPA: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
+Por instali la plej freŝan version antaŭ ol `wslu` atigas `main` deponejon, vi povas instali per nia PPA: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
 
 ### OpenSUSE
 
-You can install `wslu` with the following command:
+Oni povas instali `wslu` per la jenaj komandoj:
 
 ```
 sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/openSUSE_Leap_15.1/home:wslutilities.repo
@@ -137,7 +152,7 @@ sudo zypper in wslu
 
 ### SUSE Linux Enperprise Server
 
-You can install `wslu` with the following command:
+Oni povas instali `wslu` per la jenaj komandoj:
 
 ```
 SLESCUR_VERSION="$(grep VERSION= /etc/os-release | sed -e s/VERSION=//g -e s/\"//g -e s/-/_/g)"
@@ -147,15 +162,15 @@ sudo zypper up
 sudo zypper in wslu
 ```
 
-### Other distributions
+### Aliaj Distribuoj
 
-> **⚠ Not Recommend**
+> **⚠ Ne Rekomendu**
 > 
-> `curl | bash` method is not secure. [Related article](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install)
+> La maniero `curl | bash` estas ne sekura. [Rilata atikolo (La angla)](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install)
 
-You can install `wslu` with the following command on your preferred distribution: `curl -sL https://raw.githubusercontent.com/wslutilities/wslu/master/extras/scripts/wslu-install | bash`
+Oni povas instali `wslu` per la jenaj komandoj sur via preferata distribuoj: `curl -sL https://raw.githubusercontent.com/wslutilities/wslu/master/extras/scripts/wslu-install | bash`
 
-### For Older Verions
+### Por Pli Malnovaj Verionoj
 
 #### Install from `wsl-translinux`
 

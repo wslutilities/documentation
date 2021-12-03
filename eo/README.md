@@ -1,101 +1,92 @@
 
 # wslu
 
-[![GitHub (pre-)release](https://img.shields.io/github/v/release/wslutilities/wslu?include_prereleases&logo=github&style=flat-square)](https://github.com/wslutilities/wslu)
-[![GitLab](https://img.shields.io/static/v1?label=gitlab&logo=gitlab&color=E24329&message=mirrored&style=flat-square)](https://gitlab.com/wslutilities/wslu)
-[![Launchpad](https://img.shields.io/static/v1?label=launchpad&logo=launchpad&color=F8C300&message=mirrored&style=flat-square)](https://launchpad.net/wslu)
-[![Gitee](https://img.shields.io/static/v1?label=gitee&color=C71D23&message=mirrored&style=flat-square)](https://gitee.com/mirrors/wslu)
-[![Twitter Follow](https://img.shields.io/twitter/follow/wslutilities?style=flat-square&logo=twitter&color=1DA1F2&label=follow)](https://twitter.com/wslutilities)
+[![GitHub (pre-)release](https://img.shields.io/github/v/release/wslutilities/wslu?include_prereleases&label=eldono&logo=github&style=flat-square)](https://github.com/wslutilities/wslu)
+[![Launchpad](https://img.shields.io/static/v1?label=launchpad&logo=launchpad&color=F8C300&message=spegulita&style=flat-square)](https://launchpad.net/wslu)
 
-This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop.
+Estas kolekto de utilaĵoj por Vindoza Subsistemo por Linukso (Windows Subsystem for Linux, WSL), kiel ricevi Vindozajn medivariablojn aŭ krei viajn plej ŝatatajn Linuksajn Grafikinterfacajn aplikaĵojn ŝparvojojn sur Vindoza labortablo.
 
-Requires Windows 10 Creators Update; Some of the feature requires a higher version of Windows 10; Supports WSL2.
+Deviĝi Vindozo 10 1703; Iom de funkciojn deviĝas pli alian version de Vindozo 10; Ankaŭ subteni WSL2.
 
-## Feature
+## Funkcioj
 
 **wslusc**
 
-A WSL shortcut creator to create a shortcut on your Windows 10 Desktop.
+WSL ŝparvoja kreinto kiu kreas ŝparvojo sur via Vindoza labortablo.
 
 **wslsys**
 
-A WSL system information printer to print out system informations from Windows 10 or WSL.
+WSL sistema informa presilo kiu presilas sistemajn informojn el Vindozo 10 aŭ WSL.
 
 **wslfetch**
 
-A WSL screenshot information tool to print information in an elegant way.
+WSL ekrankopia informa ilo kiu presilas informojn elegante.
 
 **wslvar**
 
-A WSL tool to help you get Windows system environment variables.
+WSL ilo por helpi vin ricevi Vindozajn sistemajn medivariablojn.
 
 **wslview**
 
-*With alias `wview/wslstart/wstart`*
+*Kun simbola ligilo `wview/wslstart/wstart`*
 
-A fake WSL browser that can help you open link in default Windows browser or open files on Windows.
+Falsa WSL retumilo/foliumilo kiu povas helpi vin malfermi ligilojn en via defaŭlta Vindoza retumilon aŭ malfermi dosierojn sur Vindozo.
 
 **wslupath**
 
-*⚠ Deprecated*
+*⚠ Evitinda*
 
-A WSL tool to convert path styles.
+WSL ilo kiu konvertas dosierindikojn.
 
 **wslact**
 
-A set of quick actions for WSL such as quickly mounting all drives or manually sync time between Windows and WSL.
+Aro de rapidaj agoj por WSL, kiel repide surmeti ĉiujn Vindozajn diskingojn aŭ mane sinkronigi tempon inter Vindozo kaj WSL.
 
-**wslgsu**
-A WSL tool to help creating startup tasks for linux process on Windows.
-
-## Currently supported Distro
+## Subtenaj Linuksaj Distribuoj
 
 - [Debian GNU/Linux](https://www.microsoft.com/store/productId/9MSVKQC78PK6)
 - [Kali Linux](https://www.microsoft.com/store/productId/9PKR34TNCV07)
-- OpenSUSE Leap [42](https://www.microsoft.com/store/productId/9NJVJTS82TJX), [15.0](https://www.microsoft.com/store/productId/9N1TB6FPVJ8C), [15.1](https://www.microsoft.com/store/productId/9NJFZK00FGKV), and [15.2](https://www.microsoft.com/store/productId/9MZD0N9Z4M4H)
-- SUSE Linux Enterprise Server [12](https://www.microsoft.com/store/productId/9P32MWBH6CNS) and [15](https://www.microsoft.com/store/productId/9PMW35D7FNLX)
-- Ubuntu [Latest](https://www.microsoft.com/store/productId/9NBLGGH4MSV6), Community Preview, [16.04 LTS](https://www.microsoft.com/store/productId/9PJN388HP8C9), [18.04 LTS](https://www.microsoft.com/store/productId/9N9TNGVNDL3Q) and 20.04 LTS
-- [Pengwin (Formerly WLinux)](https://www.microsoft.com/store/productId/9NV1GV1PXZ6P)
+- OpenSUSE Leap [42](https://www.microsoft.com/store/productId/9NJVJTS82TJX), [15.0](https://www.microsoft.com/store/productId/9N1TB6FPVJ8C), [15.1](https://www.microsoft.com/store/productId/9NJFZK00FGKV), kaj [15.2](https://www.microsoft.com/store/productId/9MZD0N9Z4M4H)
+- SUSE Linux Enterprise Server [12](https://www.microsoft.com/store/productId/9P32MWBH6CNS) kaj [15](https://www.microsoft.com/store/productId/9PMW35D7FNLX)
+- Ubuntu [Latest](https://www.microsoft.com/store/productId/9NBLGGH4MSV6), [16.04 LTS](https://www.microsoft.com/store/productId/9PJN388HP8C9), [18.04 LTS](https://www.microsoft.com/store/productId/9N9TNGVNDL3Q) kaj 20.04 LTS
+- [Pengwin (Antaŭe WLinux)](https://www.microsoft.com/store/productId/9NV1GV1PXZ6P)
 
-**Community Supported Distro**
-- Arch Linux via [ArchWSL](https://github.com/yuk7/ArchWSL)
-- Alpine Linux via [AlpineWSL](https://github.com/yuk7/AlpineWSL) or [Alpine WSL](https://www.microsoft.com/store/productId/9P804CRF0395)
-- Scientific Linux, Oracle Linux* or RedHat Enterprise Linux** via [Pengwin Enterprise (Formerly WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)
-- Fedora via [Fedora Remix for WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix)
-- 
+**Komunumsubtenataj Distribuoj **
+- Arch Linux per [ArchWSL](https://github.com/yuk7/ArchWSL)
+- Alpine Linux per [AlpineWSL](https://github.com/yuk7/AlpineWSL) aŭ [Alpine WSL](https://www.microsoft.com/store/productId/9P804CRF0395)
+- Scientific Linux, Oracle Linux* aŭ RedHat Enterprise Linux** per [Pengwin Enterprise (Antaŭe WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)
+- Fedora per [Fedora Remix for WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix)
 
 
-*: Will support in the future.
+*: Ni apogos estonte.
 
-**: you need to request to using RHEL from WLinux team and have a license of RHEL of your own.
+**: Vi devas peti Whitewater Foundry por uzi RHEL, kaj devas havi vian propran RHEL licencon.
 
-Legacy Ubuntu is no longer supported.
+Hereda Ubuntu ne plu estas subtenata.
 
-## Bug
+## Cimo
 
-Report bugs to <https://github.com/wslutilities/wslu/issues>.
+Raportu cimoj al <https://github.com/wslutilities/wslu/issues>.
 
-Report bugs for Ubuntu version to <https://bugs.launchpad.net/ubuntu/+source/wslu>.
+Raportu Ubuntu versiaj cimoj al <https://bugs.launchpad.net/ubuntu/+source/wslu>.
 
-## License & Credits
+## Permesilo & Agnosko
 
 <img width="150" src="https://www.gnu.org/graphics/gplv3-with-text-136x68.png">
 
-This project uses [GPLv3](LICENSE) License.
+Ĉi tiu projekto uzas [GPLv3 Permesilo.
 
-Logo of WSL Utilities and icons for `wslusc` desktop shortcuts are licensed under [CC BY 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+Emblemo de WSL Utilities kaj bildsimboloj por `wslusc` estas disponebla laŭ la permesilo [Krea Komunaĵo Atribuite 4.0 Tutmonda](http://creativecommons.org/licenses/by/4.0/).
 
+sudo.ps1 (`./src/etc/sudo.ps1`) estas la componanto in la projekto [psutils](^1) de Luke Sampson. La diseiro usas MIT Permisilo.
 
+Tux Emblemo uzi en `/src/etc/wsl.ico` estas kreita de Larry Ewing per Gimp, kaj rekreita de Garrett LeSage per Inkscape.
 
-The sudo.ps1 (`./src/etc/sudo.ps1`) used here is a part of [psutils](^1) made by Luke Sampson. the file is used under MIT License.
+Parto de la ASCII-arto de `wslfetch` venas de [neofetch](^2) kun MIT-permisilon kaj [screenFetch](^3) kun GPLv3-permisilon.
 
-Tux logo used here(`/src/etc/wsl.ico`) was originally made by Larry Ewing in the Gimp and re-illustrated in vector by Garrett LeSage, using Inkscape.
+Pengwin Emblemo en `wslfetch` estas la ASCII versio de la arto de [Dennis D. Bednarz](^4), kaj estas uzata kun permeso de Whitewater Foundry.
 
-Some of `wslfetch` ASCII Arts comes from [neofetch](^2) with MIT License (License B) and [screenFetch](^3) with GPLv3 License (License C).
-
-Pengwin Logo used in `wslfetch` ASCII art is ASCII version of the artwork by [Dennis D. Bednarz](^4), with use permission from Whitewater Foundry.
-
-WLinux Logo used in `wslfetch` ASCII art is ASCII version of the artwork by Larry Ewing.
+WLinux Emblemo en `wslfetch` estas la ASCII versio de la arto de Larry Ewing.
 
 [^1]: https://github.com/lukesampson/psutils/
 [^2]: https://github.com/dylanaraps/neofetch/
