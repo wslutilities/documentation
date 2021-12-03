@@ -1,4 +1,4 @@
-## Installation
+## 安裝
 
 ### Alpine Linux
 
