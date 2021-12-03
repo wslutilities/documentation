@@ -42,7 +42,7 @@
 
 一组 WSL 快捷动作，如快速挂载所有硬盘或手动与 Windows 同步时间。
 
-## 支持的 Linux 操作系统
+## 支持的 Linux 发行版
 
 - [Debian GNU/Linux](https://www.microsoft.com/store/productId/9MSVKQC78PK6)
 - [Kali Linux](https://www.microsoft.com/store/productId/9PKR34TNCV07)
@@ -51,7 +51,7 @@
 - Ubuntu [Latest](https://www.microsoft.com/store/productId/9NBLGGH4MSV6), [16.04 LTS](https://www.microsoft.com/store/productId/9PJN388HP8C9), [18.04 LTS](https://www.microsoft.com/store/productId/9N9TNGVNDL3Q) 与 20.04 LTS
 - [Pengwin (Formerly WLinux)](https://www.microsoft.com/store/productId/9NV1GV1PXZ6P)
 
-**社区支持的操作系统**
+**社区支持的发行版**
 - Arch Linux （使用 [ArchWSL](https://github.com/yuk7/ArchWSL)）
 - Alpine Linux （使用 [AlpineWSL](https://github.com/yuk7/AlpineWSL) 或 [Alpine WSL](https://www.microsoft.com/store/productId/9P804CRF0395)）
 - Scientific Linux, Oracle Linux* 或 RedHat Enterprise Linux** （使用 [Pengwin Enterprise (Formerly WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)）

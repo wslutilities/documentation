@@ -51,7 +51,7 @@ Aro de rapidaj agoj por WSL, kiel repide surmeti ĉiujn Vindozajn diskingojn aŭ
 - Ubuntu [Latest](https://www.microsoft.com/store/productId/9NBLGGH4MSV6), [16.04 LTS](https://www.microsoft.com/store/productId/9PJN388HP8C9), [18.04 LTS](https://www.microsoft.com/store/productId/9N9TNGVNDL3Q) kaj 20.04 LTS
 - [Pengwin (Antaŭe WLinux)](https://www.microsoft.com/store/productId/9NV1GV1PXZ6P)
 
-**Komunumsubtenataj Distribuoj **
+**Komunumsubtenataj Distribuoj**
 - Arch Linux per [ArchWSL](https://github.com/yuk7/ArchWSL)
 - Alpine Linux per [AlpineWSL](https://github.com/yuk7/AlpineWSL) aŭ [Alpine WSL](https://www.microsoft.com/store/productId/9P804CRF0395)
 - Scientific Linux, Oracle Linux* aŭ RedHat Enterprise Linux** per [Pengwin Enterprise (Antaŭe WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)
