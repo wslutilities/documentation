@@ -1,4 +1,4 @@
-## Installation
+## Instalo
 
 ### Alpine Linux
 
@@ -170,7 +170,7 @@ sudo zypper in wslu
 
 Oni povas instali `wslu` per la jenaj komandoj sur via preferata distribuoj: `curl -sL https://raw.githubusercontent.com/wslutilities/wslu/master/extras/scripts/wslu-install | bash`
 
-### Por Pli Malnovaj Verionoj
+### Por Pli Malnovaj Verionoj (Sur La Angla)
 
 #### Install from `wsl-translinux`
 
