@@ -74,7 +74,7 @@ Raportu Ubuntu versiaj cimoj al <https://bugs.launchpad.net/ubuntu/+source/wslu>
 
 <img width="150" src="https://www.gnu.org/graphics/gplv3-with-text-136x68.png">
 
-Ĉi tiu projekto uzas [GPLv3 Permesilo.
+Ĉi tiu projekto uzas GPLv3 Permesilo.
 
 Emblemo de WSL Utilities kaj bildsimboloj por `wslusc` estas disponebla laŭ la permesilo [Krea Komunaĵo Atribuite 4.0 Tutmonda](http://creativecommons.org/licenses/by/4.0/).
 

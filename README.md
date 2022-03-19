@@ -57,7 +57,6 @@ A set of quick actions for WSL such as quickly mounting all drives or manually s
 - Alpine Linux via [AlpineWSL](https://github.com/yuk7/AlpineWSL) or [Alpine WSL](https://www.microsoft.com/store/productId/9P804CRF0395)
 - Scientific Linux, Oracle Linux* or RedHat Enterprise Linux** via [Pengwin Enterprise (Formerly WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)
 - Fedora via [Fedora Remix for WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix)
-- 
 
 
 *: Will support in the future.
