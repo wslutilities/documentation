@@ -70,7 +70,12 @@ Oni povas instali `wslu` per la jenaj komandoj:
 ```
 sudo apt install gnupg2 apt-transport-https
 wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gpg.d/wslu.asc
+
+# Debian 10
 echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list
+# Debian 11
+echo "deb https://pkg.wslutiliti.es/debian bullseye main" | sudo tee -a /etc/apt/sources.list
+
 sudo apt update
 sudo apt install wslu
 ```
@@ -138,14 +143,34 @@ sudo apt update
 sudo apt install ubuntu-wsl
 ```
 
-Por instali la plej freŝan version antaŭ ol `wslu` atigas `main` deponejon, vi povas instali per nia PPA: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
+Vi povas instali per nia PPA por instali la plej freŝan version de `wslu`: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
 
 ### OpenSUSE
 
 Oni povas instali `wslu` per la jenaj komandoj:
 
+#### Leap 15.1 - 15.2
+
 ```
-sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/openSUSE_Leap_15.1/home:wslutilities.repo
+SUSE_VERSION="$(grep VERSION= /etc/os-release | sed -e s/VERSION=//g -e s/\"//g -e s/-/_/g)"
+sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/openSUSE_Leap_${SUSE_VERSION}/home:wslutilities.repo
+sudo zypper up
+sudo zypper in wslu
+```
+
+### Leap 15.3 - 15.4
+
+```
+SUSE_VERSION="$(grep VERSION= /etc/os-release | sed -e s/VERSION=//g -e s/\"//g -e s/-/_/g)"
+sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/${SUSE_VERSION}/home:wslutilities.repo
+sudo zypper up
+sudo zypper in wslu
+```
+
+#### Tumbleweed
+
+```
+sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/openSUSE_Tumbleweed/home:wslutilities.repo
 sudo zypper up
 sudo zypper in wslu
 ```
