@@ -34,8 +34,6 @@ A fake WSL browser that can help you open link in default Windows browser or ope
 
 **wslupath**
 
-*⚠ Deprecated*
-
 A WSL tool to convert path styles.
 
 **wslact**
