@@ -133,11 +133,15 @@ sudo dnf install -y wslu
 
 ### Ubuntu
 
-> 注意!
->
-> Ubuntu 版本的 `wslu` 为修改版。你需要在[此](https://bugs.launchpad.net/ubuntu/+source/wslu)对 Ubuntu 版问题进行反馈。
+::: tip 提示
+Ubuntu 版本需要在[此](https://bugs.launchpad.net/ubuntu/+source/wslu)进行反馈。
+:::
 
-最新版本已预装。针对旧版本的安装，请安装依赖于 wslu 的 ubuntu-wsl:
+::: warning 警告
+从 Ubuntu 22.04 LTS 开始不再预装`wslu`。请安装 PPA 版。
+:::
+
+ Ubuntu 22.04 LTS 之前的版本已预装。针对旧版本的安装，请安装依赖于 wslu 的 ubuntu-wsl:
 
 ```
 sudo apt update

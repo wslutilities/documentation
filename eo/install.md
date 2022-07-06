@@ -132,11 +132,15 @@ sudo dnf install -y wslu
 
 ### Ubuntu
 
-> Attenu!
->
-> Por Ubuntu versio, Oni devas ne nur raporti cimojn ĉi tie sed ankaŭ raporti cimojn ĉe [Launchpad](https://bugs.launchpad.net/ubuntu/+source/wslu).
+::: tip INFORMO
+Raportu cimojn ĉe [Launchpad](https://bugs.launchpad.net/ubuntu/+source/wslu) por Ubuntu versio.
+:::
 
-Antaŭinstalita en la plej freŝa versio. Sur pli aĝaj instaloj de Ubuntu, oni povas instali `ubuntu-wsl` kiu dependas de `wslu`: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
+::: warning AVERTO
+`wslu` ne plu estas antaŭinstalita ekde Ubuntu 22.04 LTS. Bonvolu instali la PPA-version.
+:::
+
+Antaŭinstalita en la plej freŝa versio antaŭ Ubuntu 22.04 LTS. Sur pli aĝaj instaloj de Ubuntu, oni povas instali `ubuntu-wsl` kiu dependas de `wslu`: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
 
 ```
 sudo apt update
