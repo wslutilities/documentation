@@ -131,9 +131,9 @@ sudo dnf install -y wslu
 
 > Attention!
 >
-> For Ubuntu version, you should not only report bug here but also report bug at [Launchpad](https://bugs.launchpad.net/ubuntu/+source/wslu).
+> For Ubuntu version, you should not report bug here but report bug at [Launchpad](https://bugs.launchpad.net/ubuntu/+source/wslu).
 
-Preinstalled in the latest apps. On older installations of Ubuntu please install `ubuntu-wsl` that depends on `wslu`:
+Preinstalled in the apps before Ubuntu 22.04 LTS. **Starting from Ubuntu 22.04 LTS, Ubuntu on WSL no longer bundled with Ubuntu on WSL.** On older installations of Ubuntu please install `ubuntu-wsl` that depends on `wslu`:
 
 ```
 sudo apt update
