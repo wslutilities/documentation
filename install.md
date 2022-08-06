@@ -188,6 +188,12 @@ sudo zypper up
 sudo zypper in wslu
 ```
 
+### Void Linux
+
+```
+sudo xbps-install wslu
+```
+
 ### Other distributions
 
 > **⚠ Not Recommend**
