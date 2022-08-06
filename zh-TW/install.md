@@ -191,6 +191,12 @@ sudo zypper up
 sudo zypper in wslu
 ```
 
+### Void Linux
+
+```
+sudo xbps-install wslu
+```
+
 ### 其他發行版
 
 > **⚠ 不建議**
