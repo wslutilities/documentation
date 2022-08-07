@@ -193,8 +193,19 @@ sudo zypper in wslu
 
 ### Void Linux
 
+Oni povas instali `wslu` per la jenaj komandoj:
+
 ```
 sudo xbps-install wslu
+```
+
+### Clear Linux
+
+Oni povas instali `wslu` per la jenaj komandoj:
+
+```
+sudo swupd 3rd-party add wslutilities https://pkg.wslutiliti.es/clearlinux
+sudo swupd 3rd-party bundle-add wslu
 ```
 
 ### Aliaj Distribuoj

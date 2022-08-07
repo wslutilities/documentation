@@ -193,8 +193,19 @@ sudo zypper in wslu
 
 ### Void Linux
 
+你可以用以下指令安装 `wslu`：
+
 ```
 sudo xbps-install wslu
+```
+
+### Clear Linux
+
+你可以用以下指令安装 `wslu`：
+
+```
+sudo swupd 3rd-party add wslutilities https://pkg.wslutiliti.es/clearlinux
+sudo swupd 3rd-party bundle-add wslu
 ```
 
 ### 其他發行版

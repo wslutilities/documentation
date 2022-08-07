@@ -56,6 +56,8 @@ Aro de rapidaj agoj por WSL, kiel repide surmeti ĉiujn Vindozajn diskingojn aŭ
 - Alpine Linux per [AlpineWSL](https://github.com/yuk7/AlpineWSL) aŭ [Alpine WSL](https://www.microsoft.com/store/productId/9P804CRF0395)
 - Scientific Linux, Oracle Linux* aŭ RedHat Enterprise Linux** per [Pengwin Enterprise (Antaŭe WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)
 - Fedora per [Fedora Remix for WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix)
+- Void Linux per [VoidWSL](https://github.com/am11/VoidWSL)
+- Clear Linux per [ClearWSL](https://github.com/wight554/ClearWSL)
 
 
 *: Ni apogos estonte.

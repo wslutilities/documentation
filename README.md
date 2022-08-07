@@ -57,6 +57,7 @@ A set of quick actions for WSL such as quickly mounting all drives or manually s
 - Scientific Linux, Oracle Linux* or RedHat Enterprise Linux** via [Pengwin Enterprise (Formerly WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)
 - Fedora via [Fedora Remix for WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix)
 - Void Linux via [VoidWSL](https://github.com/am11/VoidWSL)
+- Clear Linux via [ClearWSL](https://github.com/wight554/ClearWSL)
 
 
 *: Will support in the future.

@@ -190,8 +190,19 @@ sudo zypper in wslu
 
 ### Void Linux
 
+You can install `wslu` with the following command:
+
 ```
 sudo xbps-install wslu
+```
+
+### Clear Linux
+
+You can install `wslu` with the following command:
+
+```
+sudo swupd 3rd-party add wslutilities https://pkg.wslutiliti.es/clearlinux
+sudo swupd 3rd-party bundle-add wslu
 ```
 
 ### Other distributions

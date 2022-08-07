@@ -56,6 +56,8 @@
 - Alpine Linux （使用 [AlpineWSL](https://github.com/yuk7/AlpineWSL) 或 [Alpine WSL](https://www.microsoft.com/store/productId/9P804CRF0395)）
 - Scientific Linux, Oracle Linux* 或 RedHat Enterprise Linux** （使用 [Pengwin Enterprise (Formerly WLinux Enterprise)](https://www.microsoft.com/store/productId/9N8LP0X93VCP)）
 - Fedora （使用 [Fedora Remix for WSL](https://github.com/WhitewaterFoundry/WSLFedoraRemix)）
+- Void Linux （使用 [VoidWSL](https://github.com/am11/VoidWSL)）
+- Clear Linux （使用 [ClearWSL](https://github.com/wight554/ClearWSL)）
 
 
 *: 未来会支持。
