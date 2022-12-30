@@ -149,6 +149,12 @@ sudo apt install ubuntu-wsl
 
 Vi povas instali per nia PPA por instali la plej freŝan version de `wslu`: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
 
+```
+sudo add-apt-repository ppa:wslutilities/wslu
+sudo apt update
+sudo apt install wslu
+```
+
 ### OpenSUSE
 
 Oni povas instali `wslu` per la jenaj komandoj:
