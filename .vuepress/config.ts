@@ -149,7 +149,7 @@ owa_cmds.push(['trackClicks']);
 							{text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html'},
 							{text: 'Contribution', link: '/legacy/contrib.html'},
 							{text: 'Installation', link: '/legacy/inst.html'},
-							{texT: 'Manpage', link: '/legacy/wslu.html'}
+							{text: 'Manpage', link: '/legacy/wslu.html'}
 						]}
 					]
 					}
@@ -184,7 +184,7 @@ owa_cmds.push(['trackClicks']);
 							{text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html'},
 							{text: 'Contribution', link: '/legacy/contrib.html'},
 							{text: 'Installation', link: '/legacy/inst.html'},
-							{texT: 'Manpage', link: '/legacy/wslu.html'}
+							{text: 'Manpage', link: '/legacy/wslu.html'}
 						]}
 					]
 		

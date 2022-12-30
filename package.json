@@ -11,6 +11,9 @@
     "build": "vuepress build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "resolutions": {
+    "vuepress-vite": "^2.0.0-beta.60"
+  },
   "repository": "git+https://github.com/wslutilities/documentation.git",
   "author": "Jinming Wu, Patrick <me@patrickwu.space>",
   "license": "ISC",

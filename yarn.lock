@@ -1506,7 +1506,7 @@ vue@^3.2.45:
     "@vue/server-renderer" "3.2.45"
     "@vue/shared" "3.2.45"
 
-vuepress-vite@2.0.0-beta.50-pre.1:
+vuepress-vite@2.0.0-beta.50-pre.1, vuepress-vite@^2.0.0-beta.60:
   version "2.0.0-beta.60"
   resolved "https://registry.yarnpkg.com/vuepress-vite/-/vuepress-vite-2.0.0-beta.60.tgz#844359283f18bbd638a059e3477388b8d2b73a1e"
   integrity sha512-ljHvo419nbfYl/cQecVbYL4bwJjUOX0+z76v/4yX6ODeGIpdHIs7ARZ4t52mr0EEfwP6aZbZa+qFZTTQutxAuQ==
