@@ -1,4 +1,6 @@
-module.exports = {
+import { defaultTheme } from "vuepress";
+
+export default  {
 	base: "/wslu/",
 	title: 'wslu Wiki',
 	description: 'A collection of utilities for Windows 10 Linux Subsystems',
@@ -42,7 +44,7 @@ owa_cmds.push(['trackClicks']);
 			description: 'kolekto de utilaĵoj por WSL'
 		}
 	},
-	themeConfig: {
+	theme: defaultTheme({
 		sidebar: false,
 		logo: 'https://github.com/wslutilities/wslu/raw/master/extras/icon.png',
 		locales: {
@@ -75,7 +77,7 @@ owa_cmds.push(['trackClicks']);
 						{text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html'},
 						{text: 'Contribution', link: '/legacy/contrib.html'},
 						{text: 'Installation', link: '/legacy/inst.html'},
-						{texT: 'Manpage', link: '/legacy/wslu.html'}
+						{text: 'Manpage', link: '/legacy/wslu.html'}
 					]}
 				]
 	
@@ -111,7 +113,7 @@ owa_cmds.push(['trackClicks']);
 						{text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html'},
 						{text: 'Contribution', link: '/legacy/contrib.html'},
 						{text: 'Installation', link: '/legacy/inst.html'},
-						{texT: 'Manpage', link: '/legacy/wslu.html'}
+						{text: 'Manpage', link: '/legacy/wslu.html'}
 					]}
 				]
 	
@@ -191,5 +193,5 @@ owa_cmds.push(['trackClicks']);
 			}
 		  },
 
-	}
+	})
 }
