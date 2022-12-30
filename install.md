@@ -146,6 +146,12 @@ sudo apt install ubuntu-wsl
 
 To install the latest version of `wslu`, you can install via our PPA: <https://launchpad.net/~wslutilities/+archive/ubuntu/wslu>
 
+```
+sudo add-apt-repository ppa:wslutilities/wslu
+sudo apt update
+sudo apt install wslu
+```
+
 ### OpenSUSE
 
 You can install `wslu` with the following command:
