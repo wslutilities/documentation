@@ -130,7 +130,7 @@ sudo dnf install -y wslu
 ### Ubuntu
 
 ::: tip INFO
-For Ubuntu version, you should only report bug at [Launchpad](https://bugs.launchpad.net/ubuntu/+source/wslu).
+For Ubuntu `universe` version, you should only report bug at [Launchpad](https://bugs.launchpad.net/ubuntu/+source/wslu); for the PPA version, you should report bugs at the GitHub issues.
 :::
 
 ::: warning
