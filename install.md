@@ -25,42 +25,17 @@ Server = https://pkg.wslutiliti.es/arch/
 ```
 5. run `pacman -Sy && pacman -S wslu` to install.
 
-### CentOS/RHEL/Oracle Linux (Version 8 and below)
-
-Add the repository for the corresponding Linux distribution:
-
-- **CentOS 7**: 
+### CentOS 7
 ```
 sudo yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/wslutilities/CentOS_7/home:wslutilities.repo
-```
-- **CentOS 8**: 
-```
-sudo dnf install -y epel-release 
-sudo dnf config-manager --set-enabled PowerTools
-sudo yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/wslutilities/CentOS_8/home:wslutilities.repo
-```
-- **Oracle Linux 7**: 
-```
-sudo yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/wslutilities/RHEL_7/home:wslutilities.repo
-```
-- **Oracle Linux 8**: 
-```
-sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(/bin/arch)-rpms
-sudo yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/wslutilities/CentOS_8/home:wslutilities.repo
-```
-- **Red Hat Enterprise Linux 7**: 
-```
-sudo yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/wslutilities/RHEL_7/home:wslutilities.repo
-```
-- **Red Hat Enterprise Linux 8**: 
-```
-sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(/bin/arch)-rpms
-sudo yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/wslutilities/CentOS_8/home:wslutilities.repo
+sudo yum install wslu
 ```
 
-Then install with the command `sudo yum install wslu`.
+### Red Hat Enterprise Linux 7/Oracle Linux 7
+```
+sudo yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/wslutilities/RHEL_7/home:wslutilities.repo
+sudo yum install wslu
+```
 
 
 ### Debian
@@ -80,9 +55,14 @@ sudo apt update
 sudo apt install wslu
 ```
 
-### Fedora and CentOS/RHEL/Oracle Linux after Version 8
+### Fedora and CentOS/RHEL/Oracle Linux/AlmaLinux/Rocky Linux 8+
 
 ```
+
+# for CentOS/RHEL 8 only
+sudo dnf install epel-release dnf-plugins-core
+sudo dnf config-manager --set-enabled PowerTools
+
 sudo dnf copr enable wslutilities/wslu
 sudo dnf install wslu
 ```
@@ -156,20 +136,11 @@ sudo apt install wslu
 
 You can install `wslu` with the following command:
 
-#### Leap 15.1 - 15.2
+#### Leap
 
 ```
 SUSE_VERSION="$(grep VERSION= /etc/os-release | sed -e s/VERSION=//g -e s/\"//g -e s/-/_/g)"
-sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/openSUSE_Leap_${SUSE_VERSION}/home:wslutilities.repo
-sudo zypper up
-sudo zypper in wslu
-```
-
-### Leap 15.3 - 15.4
-
-```
-SUSE_VERSION="$(grep VERSION= /etc/os-release | sed -e s/VERSION=//g -e s/\"//g -e s/-/_/g)"
-sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/${SUSE_VERSION}/home:wslutilities.repo
+sudo zypper addrepo https://copr.fedorainfracloud.org/coprs/wslutilities/wslu/repo/opensuse-leap-${SUSE_VERSION}/wslutilities-wslu-opensuse-leap-${SUSE_VERSION}.repo
 sudo zypper up
 sudo zypper in wslu
 ```
@@ -177,19 +148,27 @@ sudo zypper in wslu
 #### Tumbleweed
 
 ```
-sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/openSUSE_Tumbleweed/home:wslutilities.repo
+sudo zypper addrepo https://copr.fedorainfracloud.org/coprs/wslutilities/wslu/repo/opensuse-tumbleweed/wslutilities-wslu-opensuse-tumbleweed.repo
 sudo zypper up
 sudo zypper in wslu
 ```
 
 ### SUSE Linux Enperprise Server
 
-You can install `wslu` with the following command:
+#### 12 SP5
 
 ```
-SLESCUR_VERSION="$(grep VERSION= /etc/os-release | sed -e s/VERSION=//g -e s/\"//g -e s/-/_/g)"
-sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/SLE_$SLESCUR_VERSION/home:wslutilities.repo
-sudo zypper addrepo https://download.opensuse.org/repositories/graphics/SLE_12_SP3_Backports/graphics.repo
+sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/SLE_12_SP5/home:wslutilities.repo
+sudo zypper addrepo https://download.opensuse.org/repositories/graphics/SLE_12_SP5/graphics.repo
+sudo zypper up
+sudo zypper in wslu
+```
+
+#### 15
+
+```
+sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/SLE_15/home:wslutilities.repo
+sudo zypper addrepo https://download.opensuse.org/repositories/graphics/SLE_15_SP3/graphics.repo
 sudo zypper up
 sudo zypper in wslu
 ```
