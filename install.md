@@ -25,7 +25,7 @@ Server = https://pkg.wslutiliti.es/arch/
 ```
 5. run `pacman -Sy && pacman -S wslu` to install.
 
-### CentOS/RHEL/Oracle Linux
+### CentOS/RHEL/Oracle Linux (Version 8 and below)
 
 Add the repository for the corresponding Linux distribution:
 
@@ -80,7 +80,7 @@ sudo apt update
 sudo apt install wslu
 ```
 
-### Fedora
+### Fedora and CentOS/RHEL/Oracle Linux after Version 8
 
 ```
 sudo dnf copr enable wslutilities/wslu

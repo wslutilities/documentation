@@ -25,7 +25,7 @@ Server = https://pkg.wslutiliti.es/arch/
 ```
 5. 使用指令 `pacman -Sy && pacman -S wslu` 來執行安裝。
 
-### CentOS/RHEL/Oracle Linux
+### CentOS/RHEL/Oracle Linux (版本 8 及以下)
 
 為相應的發行版新增倉庫：
 
@@ -79,7 +79,7 @@ sudo apt update
 sudo apt install wslu
 ```
 
-### Fedora
+### Fedora 以及 CentOS/RHEL/Oracle Linux (版本 8 以上)
 
 你可以用以下指令通過 `COPR` 安裝 `wslu`：
 
