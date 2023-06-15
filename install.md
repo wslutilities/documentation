@@ -12,12 +12,12 @@ sudo apk add wslu
 
 You can install `wslu` with the following methods:
 1. If not done so, initial `pacman-key` with `pacman-key --init`;
-2. add the WSL Utilties Public Signing Key to `pacman` from the keyserver from keyserver using `pacman-key -r A2861ABFD897DD37` or download from our website and import the key:
+2. download the the WSL Utilities Package Signing Key from our website and import it into `pacman`:
 ```
 wget https://pkg.wslutiliti.es/public.key
 pacman-key --add public.key
 ```
-3. Locally sign the key with `pacman-key --lsign-key A2861ABFD897DD37`;
+3. Locally sign the key with `pacman-key --lsign-key 2D4C887EB08424F157151C493DD50AA7E055D853`;
 4. add the following content in your `/etc/pacman.conf`:
 ```
 [wslutilities]
