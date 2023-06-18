@@ -50,6 +50,8 @@ wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gp
 echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list
 # Debian 11
 echo "deb https://pkg.wslutiliti.es/debian bullseye main" | sudo tee -a /etc/apt/sources.list
+# Debian 12
+echo "deb https://pkg.wslutiliti.es/debian bookworm main" | sudo tee -a /etc/apt/sources.list
 
 sudo apt update
 sudo apt install wslu

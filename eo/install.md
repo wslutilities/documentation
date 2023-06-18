@@ -12,18 +12,18 @@ sudo apk add wslu
 
 Oni pocas instali `wslu` per la jenaj metodoj:
 1. Komencu `pacman-key` per `pacman-key --init`;
-2. Aldonu la WSL Utilities Publica ŝlosilo al `pacman` de la ŝlosilaservilo per `pacman-key -r A2861ABFD897DD37`, aŭ elŝutu de la nia propra servilo kaj importu la ŝlosilo:
+2. Aldonu la WSL Utilities Publica ŝlosilo al `pacman` per elŝutu de la nia propra servilo kaj importu la ŝlosilo:
 ```
 wget https://pkg.wslutiliti.es/public.key
 pacman-key --add public.key
 ```
-3. Subskribu la ŝlosilo loke per `pacman-key --lsign-key A2861ABFD897DD37`;
-4. Aldonu la jena enhavo al `/etc/pacman.conf`:
+1. Subskribu la ŝlosilo loke per `pacman-key --lsign-key 2D4C887EB08424F157151C493DD50AA7E055D853`;
+2. Aldonu la jena enhavo al `/etc/pacman.conf`:
 ```
 [wslutilities]
 Server = https://pkg.wslutiliti.es/arch/
 ```
-5. Lanĉu `pacman -Sy && pacman -S wslu` por instali.
+1. Lanĉu `pacman -Sy && pacman -S wslu` por instali.
 
 ### CentOS 7
 ```
@@ -50,6 +50,8 @@ wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gp
 echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list
 # Debian 11
 echo "deb https://pkg.wslutiliti.es/debian bullseye main" | sudo tee -a /etc/apt/sources.list
+# Debian 12
+echo "deb https://pkg.wslutiliti.es/debian bookworm main" | sudo tee -a /etc/apt/sources.list
 
 sudo apt update
 sudo apt install wslu
