@@ -1,0 +1,25 @@
+stages:
+  - build
+  - deploy
+build-job:
+  stage: build
+  tags:
+      - node
+  script:
+      - yarn
+      - yarn build
+  artifacts:
+    paths:
+    - .vuepress/
+deploy:
+  stage: deploy
+  tags:
+    - node
+  script:
+      - git config --global user.email "me@patrickwu.space"
+      - git config --global user.name "Jinming Wu, Patrick"
+      - git clone --depth 1 https://oauth2:$CI_GIT_TOKEN@git.wedotstud.io/wslu/website.git website
+      - cp -rf ./.vuepress/dist/* ./website/wslu/
+      - git --git-dir=./website/.git --work-tree=./website add -A
+      - git --git-dir=./website/.git --work-tree=./website commit -m "wslu Wiki update at $(date)"
+      - git --git-dir=./website/.git --work-tree=./website push
