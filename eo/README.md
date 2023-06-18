@@ -1,12 +1,9 @@
 
 # wslu
 
-[![GitHub (pre-)release](https://img.shields.io/github/v/release/wslutilities/wslu?include_prereleases&label=eldono&logo=github&style=flat-square)](https://github.com/wslutilities/wslu)
-[![Launchpad](https://img.shields.io/static/v1?label=launchpad&logo=launchpad&color=F8C300&message=spegulita&style=flat-square)](https://launchpad.net/wslu)
+Estas kolekto de utilaĵoj por Windows Subsistemo por Linukso (Windows Subsystem for Linux, WSL), kiel ricevi Windows medivariablojn aŭ krei viajn plej ŝatatajn Linuksajn Grafikinterfacajn aplikaĵojn ŝparvojojn sur Vindoza labortablo.
 
-Estas kolekto de utilaĵoj por Vindoza Subsistemo por Linukso (Windows Subsystem for Linux, WSL), kiel ricevi Vindozajn medivariablojn aŭ krei viajn plej ŝatatajn Linuksajn Grafikinterfacajn aplikaĵojn ŝparvojojn sur Vindoza labortablo.
-
-Deviĝi Vindozo 10 1703; Iom de funkciojn deviĝas pli alian version de Vindozo 10; Ankaŭ subteni WSL2.
+Deviĝi Windows 10 1703; Iom de funkciojn deviĝas pli alian version de Windows; Ankaŭ subteni WSL2.
 
 ## Funkcioj
 
@@ -24,7 +21,7 @@ WSL ekrankopia informa ilo kiu presilas informojn elegante.
 
 **wslvar**
 
-WSL ilo por helpi vin ricevi Vindozajn sistemajn medivariablojn.
+WSL ilo por helpi vin ricevi Windows  sistemajn medivariablojn.
 
 **wslview**
 
@@ -40,7 +37,7 @@ WSL ilo kiu konvertas dosierindikojn.
 
 **wslact**
 
-Aro de rapidaj agoj por WSL, kiel repide surmeti ĉiujn Vindozajn diskingojn aŭ mane sinkronigi tempon inter Vindozo kaj WSL.
+Aro de rapidaj agoj por WSL, kiel repide surmeti ĉiujn Windows  diskingojn aŭ mane sinkronigi tempon inter Vindozo kaj WSL.
 
 ## Subtenaj Linuksaj Distribuoj
 

@@ -1,12 +1,9 @@
 
 # wslu
 
-[![GitHub (pre-)release](https://img.shields.io/github/v/release/wslutilities/wslu?include_prereleases&label=版本&logo=github&style=flat-square)](https://github.com/wslutilities/wslu)
-[![Launchpad](https://img.shields.io/static/v1?label=launchpad&logo=launchpad&color=F8C300&message=已镜像&style=flat-square)](https://launchpad.net/wslu)
+这是一套适用于 Windows Linux 子系统的工具组，可以在 Windows 的 Linux 子系统下完成诸如获取 Windows 环境变量或者创建你最喜爱的 Linux 进程桌面捷径等工作。
 
-这是一套适用于 Windows 10 Linux 子系统的工具组，可以在 Windows 的 Linux 子系统下完成诸如获取 Windows 环境变量或者创建你最喜爱的 Linux 进程桌面捷径等工作。
-
-需要 Windows 10 创造者更新；部分功能需要更高版本的Windows 10；支持 WSL2。
+需要 Windows 10 创造者更新；部分功能需要更高版本的Windows；支持 WSL2。
 
 ## 功能
 

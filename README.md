@@ -1,12 +1,9 @@
 
 # wslu
 
-[![GitHub (pre-)release](https://img.shields.io/github/v/release/wslutilities/wslu?include_prereleases&logo=github&style=flat-square)](https://github.com/wslutilities/wslu)
-[![Launchpad](https://img.shields.io/static/v1?label=launchpad&logo=launchpad&color=F8C300&message=mirrored&style=flat-square)](https://launchpad.net/wslu)
+This is a collection of utilities for WSL (Linux Subsystem for Windows), such as retrieving Windows environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop.
 
-This is a collection of utilities for Windows 10 Linux Subsystem, such as retrieving Windows 10 environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop.
-
-Requires Windows 10 Creators Update; Some of the feature requires a higher version of Windows 10; Supports WSL2.
+Requires at least Windows 10 Creators Update; Some of the features requires a higher version of Windows 10; Supports WSL2.
 
 ## Feature
 
