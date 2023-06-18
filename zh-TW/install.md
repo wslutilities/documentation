@@ -12,18 +12,18 @@ sudo apk add wslu
 
 你可以用以下方法安裝 `wslu`：
 1. 如未操作過，請先用指令 `pacman-key --init` 最初化 `pacman-key`；
-2. 使用指令 `pacman-key -r A2861ABFD897DD37` 將 WSL Utilities 公共密鑰從密鑰伺服器加入 `pacman`，或通過以下方法從官網下載公共密鑰導入:
+2. 通過以下方法從官網下載 WSL Utilities 公共密鑰導入 `pacman`:
 ```
 wget https://pkg.wslutiliti.es/public.key
 pacman-key --add public.key
 ```
-3. 使用指令 `pacman-key --lsign-key A2861ABFD897DD37`本地簽名密鑰;
-4. 將以下內容加入 `/etc/pacman.conf`:
+1. 使用指令 `pacman-key --lsign-key 2D4C887EB08424F157151C493DD50AA7E055D853`本地簽署密鑰;
+2. 將以下內容加入 `/etc/pacman.conf`:
 ```
 [wslutilities]
 Server = https://pkg.wslutiliti.es/arch/
 ```
-5. 使用指令 `pacman -Sy && pacman -S wslu` 來執行安裝。
+1. 使用指令 `pacman -Sy && pacman -S wslu` 來執行安裝。
 
 ### CentOS 7
 ```
@@ -50,6 +50,8 @@ wget -O - https://pkg.wslutiliti.es/public.key | sudo tee -a /etc/apt/trusted.gp
 echo "deb https://pkg.wslutiliti.es/debian buster main" | sudo tee -a /etc/apt/sources.list
 # Debian 11
 echo "deb https://pkg.wslutiliti.es/debian bullseye main" | sudo tee -a /etc/apt/sources.list
+# Debian 12
+echo "deb https://pkg.wslutiliti.es/debian bookworm main" | sudo tee -a /etc/apt/sources.list
 
 sudo apt update
 sudo apt install wslu
