@@ -16,6 +16,7 @@ deploy:
   tags:
     - node
   script:
+      - apk add --no-cache git
       - git config --global user.email "me@patrickwu.space"
       - git config --global user.name "Jinming Wu, Patrick"
       - git clone --depth 1 https://oauth2:$CI_GIT_TOKEN@git.wedotstud.io/wslu/website.git website
