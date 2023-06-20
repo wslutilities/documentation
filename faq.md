@@ -14,6 +14,27 @@ This is a limitation of WSL and it is expected. when running the shortcut, it wi
 
 the package has moved to a new location <https://pkg.wslutiliti.es/> that do not relies on my personal website. For old users, you should remove the `http://access.patrickwu.space` entry from `/etc/apt/sources.list` and readd following the guidelines for Kali Linux and Debian GNU/Linux.
 
+## the utility raises errors at `gcim Win32_OperatingSystem`. What Should I do?
+
+> from <https://github.com/wslutilities/wslu/issues/275>
+
+You might encounter this error when executing `wslsys` or `wslview` that throws error like the following:
+
+```
++ ... coding(852); [int64]((get-date) - (gcim Win32_OperatingSystem).LastBo ...
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root\cimv2:Win32_OperatingSystem:String) [Get-CimInstance], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041010,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+```
+
+In this case, the WMI class `Win32_OperatingSystem` is not available on your system. You can try to rebuild the WMI repository by following the steps below:
+
+```
+net stop winmgmt
+winmgmt /resetrepository
+```
+
+
 ## What is the error code returned?
 
 | error code | description |
