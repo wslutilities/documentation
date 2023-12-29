@@ -6,8 +6,8 @@ build-job:
   tags:
       - node
   script:
-      - yarn
-      - yarn build
+      - npm install
+      - npm run build
   artifacts:
     paths:
     - .vuepress/
