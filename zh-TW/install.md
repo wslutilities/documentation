@@ -146,7 +146,7 @@ sudo apt install wslu
 ```
 SUSE_VERSION="$(grep VERSION= /etc/os-release | sed -e s/VERSION=//g -e s/\"//g -e s/-/_/g)"
 sudo zypper addrepo https://copr.fedorainfracloud.org/coprs/wslutilities/wslu/repo/opensuse-leap-${SUSE_VERSION}/wslutilities-wslu-opensuse-leap-${SUSE_VERSION}.repo
-sudo zypper up
+sudo zypper ref
 sudo zypper in wslu
 ```
 
@@ -154,7 +154,7 @@ sudo zypper in wslu
 
 ```
 sudo zypper addrepo https://copr.fedorainfracloud.org/coprs/wslutilities/wslu/repo/opensuse-tumbleweed/wslutilities-wslu-opensuse-tumbleweed.repo
-sudo zypper up
+sudo zypper ref
 sudo zypper in wslu
 ```
 
@@ -165,7 +165,7 @@ sudo zypper in wslu
 ```
 sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/SLE_12_SP5/home:wslutilities.repo
 sudo zypper addrepo https://download.opensuse.org/repositories/graphics/SLE_12_SP5/graphics.repo
-sudo zypper up
+sudo zypper ref
 sudo zypper in wslu
 ```
 
@@ -174,7 +174,7 @@ sudo zypper in wslu
 ```
 sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/SLE_15/home:wslutilities.repo
 sudo zypper addrepo https://download.opensuse.org/repositories/graphics/SLE_15_SP3/graphics.repo
-sudo zypper up
+sudo zypper ref
 sudo zypper in wslu
 ```
 
