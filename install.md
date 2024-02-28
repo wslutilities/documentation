@@ -144,7 +144,7 @@ You can install `wslu` with the following command:
 ```
 SUSE_VERSION="$(grep VERSION= /etc/os-release | sed -e s/VERSION=//g -e s/\"//g -e s/-/_/g)"
 sudo zypper addrepo https://copr.fedorainfracloud.org/coprs/wslutilities/wslu/repo/opensuse-leap-${SUSE_VERSION}/wslutilities-wslu-opensuse-leap-${SUSE_VERSION}.repo
-sudo zypper up
+sudo zypper ref
 sudo zypper in wslu
 ```
 
@@ -152,7 +152,7 @@ sudo zypper in wslu
 
 ```
 sudo zypper addrepo https://copr.fedorainfracloud.org/coprs/wslutilities/wslu/repo/opensuse-tumbleweed/wslutilities-wslu-opensuse-tumbleweed.repo
-sudo zypper up
+sudo zypper ref
 sudo zypper in wslu
 ```
 
@@ -163,7 +163,7 @@ sudo zypper in wslu
 ```
 sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/SLE_12_SP5/home:wslutilities.repo
 sudo zypper addrepo https://download.opensuse.org/repositories/graphics/SLE_12_SP5/graphics.repo
-sudo zypper up
+sudo zypper ref
 sudo zypper in wslu
 ```
 
@@ -172,7 +172,7 @@ sudo zypper in wslu
 ```
 sudo zypper addrepo https://download.opensuse.org/repositories/home:/wslutilities/SLE_15/home:wslutilities.repo
 sudo zypper addrepo https://download.opensuse.org/repositories/graphics/SLE_15_SP3/graphics.repo
-sudo zypper up
+sudo zypper ref
 sudo zypper in wslu
 ```
 
@@ -196,7 +196,7 @@ sudo swupd 3rd-party bundle-add wslu
 ### Other distributions
 
 > **⚠ Not Recommend**
-> 
+>
 > `curl | bash` method is not secure. [Related article](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install)
 
 You can install `wslu` with the following command on your preferred distribution: `curl -sL https://raw.githubusercontent.com/wslutilities/wslu/master/extras/scripts/wslu-install | bash`
@@ -205,7 +205,7 @@ You can install `wslu` with the following command on your preferred distribution
 
 #### Install from `wsl-translinux`
 
-`wslu` is part of [wsl-translinux](https://github.com/cerebrate/wsl-translinux) apt repository. 
+`wslu` is part of [wsl-translinux](https://github.com/cerebrate/wsl-translinux) apt repository.
 
 Following the guidelines [Here](https://github.com/cerebrate/wsl-translinux/blob/master/README.md) to add the repository. Then you can simply run `sudo apt install wslu` to install `wslu`.
 
