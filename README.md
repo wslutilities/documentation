@@ -1,7 +1,7 @@
 
 # wslu
 
-This is a collection of utilities for WSL (Linux Subsystem for Windows), such as retrieving Windows environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop.
+This is a collection of utilities for WSL (Windows Subsystem for Linux), such as retrieving Windows environment variables or creating your favorite Linux GUI application shortcuts on Windows 10 Desktop.
 
 Requires at least Windows 10 Creators Update; Some of the features requires a higher version of Windows 10; Supports WSL2.
 
