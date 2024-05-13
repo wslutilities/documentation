@@ -66,6 +66,11 @@ export default defineUserConfig({
 							{ text: 'Code of Conduct', link: '/coc.html' },
 							{ text: 'FAQ', link: '/faq.html' },
 							{
+								text: 'Guides', children: [
+									{ text: 'Emacs', link: '/guides/emacs.html' }
+								]
+							},
+							{
 								text: 'Legacy', children: [
 									{ text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html' },
 									{ text: 'Contribution', link: '/legacy/contrib.html' },
@@ -105,6 +110,11 @@ export default defineUserConfig({
 							{ text: '贡献（只限英文）', link: '/contributing.html' },
 							{ text: '行为准则（只限英文）', link: '/coc.html' },
 							{ text: '常见问题', link: '/zh-CN/faq.html' },
+							{
+								text: '指南', children: [
+									{ text: 'Emacs', link: '/guides/emacs.html' }
+								]
+							},
 							{
 								text: '旧文档（只限英文）', children: [
 									{ text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html' },
@@ -146,6 +156,11 @@ export default defineUserConfig({
 							{ text: '行為守則（只限英文）', link: '/coc.html' },
 							{ text: '常見問題', link: '/zh-TW/faq.html' },
 							{
+								text: '指南', children: [
+									{ text: 'Emacs', link: '/guides/emacs.html' }
+								]
+							},
+							{
 								text: '舊文檔（只限英文）', children: [
 									{ text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html' },
 									{ text: 'Contribution', link: '/legacy/contrib.html' },
@@ -184,6 +199,11 @@ export default defineUserConfig({
 							{ text: 'Kontribuanto (Nur la Angla)', link: '/contributing.html' },
 							{ text: 'Kondutkodo (Nur la Angla)', link: '/coc.html' },
 							{ text: 'Oftaj Demandoj', link: '/eo/faq.html' },
+							{
+								text: 'Enkondukoj', children: [
+									{ text: 'Emacs', link: '/guides/emacs.html' }
+								]
+							},
 							{
 								text: 'Heredaĵo (Nur la Angla)', children: [
 									{ text: 'Beta Release Manual', link: '/legacy/beta-rel-man.html' },
