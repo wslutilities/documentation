@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "This is the documentation for WSL Utilities",
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.8",
-    "@vuepress/theme-default": "^2.0.0-rc.18",
-    "vuepress": "^2.0.0-rc.8"
+    "@vuepress/bundler-vite": "^2.0.0-rc.9",
+    "@vuepress/theme-default": "^2.0.0-rc.28",
+    "vuepress": "^2.0.0-rc.9"
   },
   "scripts": {
     "dev": "vuepress dev",
