@@ -19,7 +19,7 @@ jobs:
           npm install
           npm run build
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: forgejo/upload-artifact@v4
         with:
           name: vuepress-build
           path: .vuepress/
@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: forgejo/download-artifact@v4
         with:
           name: vuepress-build
           path: .vuepress/
@@ -40,7 +40,7 @@ jobs:
           git config --global user.name "Jinming Wu, Patrick"
       - name: Clone and Deploy
         env:
-          TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # You'll need to set this in your repository secrets
+          TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
           git clone --depth 1 https://patrick:${TOKEN}@code.wedotstud.io/wslu/website.git website
           cp -rf ./.vuepress/dist/* ./website/wslu/
